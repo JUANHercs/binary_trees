@@ -13,9 +13,7 @@ binary_tree_t *binary_tree_sibling(binary_tree_t *node)
 	temp = node->parent;
 	if (node == NULL || node->parent == NULL)
 		return (NULL);
-	if (temp->right == NULL || temp->left == NULL)
-		return (NULL);
-	if (temp->left->n == node->n)
+	if (node == temp->left)
 		return (temp->right);
 	return (temp->left);
 }
