@@ -79,11 +79,11 @@
 </ul>
 
 ## Tasks
-    <h3 class="panel-title">
+<h3 class="panel-title">
       0. New node
     </h3>
 
-    <div>
+<div>
         <span class="label label-info">
           mandatory
         </span>
@@ -146,4 +146,353 @@
 <li>And <code>value</code> is the value to store in the new node</li>
 <li>Your function must return a pointer to the created node, or <code>NULL</code> on failure or if <code>parent</code> is <code>NULL</code></li>
 <li>If <code>parent</code> already has a right-child, the new node must take its place, and the old right-child must be set as the right-child of the new node.</li>
+</ul>
+<h3 class="panel-title">
+      3. Delete
+    </h3>
+
+<div>
+        <span class="label label-info">
+          mandatory
+        </span>
+    </div>
+  </div>
+
+  <div class="panel-body">
+    <span id="user_id" data-id="2867"></span>
+
+<p>Write a function that deletes an entire binary tree</p>
+
+<ul>
+<li>Prototype: <code>void binary_tree_delete(binary_tree_t *tree);</code></li>
+<li>Where <code>tree</code> is a pointer to the root node of the tree to delete</li>
+<li>If <code>tree</code> is <code>NULL</code>, do nothing</li>
+</ul>
+    <h3 class="panel-title">
+      4. Is leaf
+    </h3>
+
+<div>
+        <span class="label label-info">
+          mandatory
+        </span>
+    </div>
+  </div>
+
+  <div class="panel-body">
+    <span id="user_id" data-id="2867"></span>
+
+<p>Write a function that checks if a node is a leaf</p>
+
+<ul>
+<li>Prototype: <code>int binary_tree_is_leaf(const binary_tree_t *node);</code></li>
+<li>Where <code>node</code> is a pointer to the node to check</li>
+<li>Your function must return <code>1</code> if <code>node</code> is a leaf, otherwise <code>0</code></li>
+<li>If <code>node</code> is <code>NULL</code>, return <code>0</code></li>
+</ul>
+    <h3 class="panel-title">
+      5. Is root
+    </h3>
+
+<div>
+        <span class="label label-info">
+          mandatory
+        </span>
+    </div>
+  </div>
+
+  <div class="panel-body">
+    <span id="user_id" data-id="2867"></span>
+
+<p>Write a function that checks if a given node is a root</p>
+
+<ul>
+<li>Prototype: <code>int binary_tree_is_root(const binary_tree_t *node);</code></li>
+<li>Where <code>node</code> is a pointer to the node to check</li>
+<li>Your function must return <code>1</code> if <code>node</code> is a root, otherwise <code>0</code></li>
+<li>If <code>node</code> is <code>NULL</code>, return <code>0</code></li>
+</ul>
+    <h3 class="panel-title">
+      6. Pre-order traversal
+    </h3>
+
+<div>
+        <span class="label label-info">
+          mandatory
+        </span>
+    </div>
+  </div>
+
+  <div class="panel-body">
+    <span id="user_id" data-id="2867"></span>
+
+<p>Write a function that goes through a binary tree using pre-order traversal</p>
+
+<ul>
+<li>Prototype: <code>void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int));</code></li>
+<li>Where <code>tree</code> is a pointer to the root node of the tree to traverse</li>
+<li>And <code>func</code> is a pointer to a function to call for each node. The value in the node must be passed as a parameter to this function.</li>
+<li>If <code>tree</code> or <code>func</code> is <code>NULL</code>, do nothing</li>
+</ul>
+    <h3 class="panel-title">
+      7. In-order traversal
+    </h3>
+
+<div>
+        <span class="label label-info">
+          mandatory
+        </span>
+    </div>
+  </div>
+
+  <div class="panel-body">
+    <span id="user_id" data-id="2867"></span>
+
+<p>Write a function that goes through a binary tree using in-order traversal</p>
+
+<ul>
+<li>Prototype: <code>void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int));</code></li>
+<li>Where <code>tree</code> is a pointer to the root node of the tree to traverse</li>
+<li>And <code>func</code> is a pointer to a function to call for each node. The value in the node must be passed as a parameter to this function.</li>
+<li>If <code>tree</code> or <code>func</code> is <code>NULL</code>, do nothing</li>
+</ul>
+    <h3 class="panel-title">
+      8. Post-order traversal
+    </h3>
+
+<div>
+        <span class="label label-info">
+          mandatory
+        </span>
+    </div>
+  </div>
+
+  <div class="panel-body">
+    <span id="user_id" data-id="2867"></span>
+
+
+<p>Write a function that goes through a binary tree using post-order traversal</p>
+
+<ul>
+<li>Prototype: <code>void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int));</code></li>
+<li>Where <code>tree</code> is a pointer to the root node of the tree to traverse</li>
+<li>And <code>func</code> is a pointer to a function to call for each node. The value in the node must be passed as a parameter to this function.</li>
+<li>If <code>tree</code> or <code>func</code> is <code>NULL</code>, do nothing</li>
+</ul>
+    <h3 class="panel-title">
+      9. Height
+    </h3>
+
+<div>
+        <span class="label label-info">
+          mandatory
+        </span>
+    </div>
+  </div>
+
+  <div class="panel-body">
+    <span id="user_id" data-id="2867"></span>
+
+<p>Write a function that measures the height of a binary tree</p>
+
+<ul>
+<li>Prototype: <code>size_t binary_tree_height(const binary_tree_t *tree);</code></li>
+<li>Where <code>tree</code> is a pointer to the root node of the tree to measure the height.</li>
+<li>If <code>tree</code> is <code>NULL</code>, your function must return <code>0</code></li>
+</ul>
+    <h3 class="panel-title">
+      10. Depth
+    </h3>
+
+<div>
+        <span class="label label-info">
+          mandatory
+        </span>
+    </div>
+  </div>
+
+  <div class="panel-body">
+    <span id="user_id" data-id="2867"></span>
+
+<p>Write a function that measures the depth of a node in a binary tree</p>
+
+<ul>
+<li>Prototype: <code>size_t binary_tree_depth(const binary_tree_t *tree);</code></li>
+<li>Where <code>tree</code> is a pointer to the node to measure the depth</li>
+<li>If <code>tree</code> is <code>NULL</code>, your function must return <code>0</code></li>
+</ul>
+    <h3 class="panel-title">
+      11. Size
+    </h3>
+
+<div>
+        <span class="label label-info">
+          mandatory
+        </span>
+    </div>
+  </div>
+
+  <div class="panel-body">
+    <span id="user_id" data-id="2867"></span>
+
+<p>Write a function that measures the size of a binary tree</p>
+
+<ul>
+<li>Prototype: <code>size_t binary_tree_size(const binary_tree_t *tree);</code></li>
+<li>Where <code>tree</code> is a pointer to the root node of the tree to measure the size</li>
+<li>If <code>tree</code> is <code>NULL</code>, the function must return 0</li>
+</ul>
+    <h3 class="panel-title">
+      12. Leaves
+    </h3>
+
+<div>
+        <span class="label label-info">
+          mandatory
+        </span>
+    </div>
+  </div>
+
+  <div class="panel-body">
+    <span id="user_id" data-id="2867"></span>
+
+<p>Write a function that counts the leaves in a binary tree</p>
+
+<ul>
+<li>Prototype: <code>size_t binary_tree_leaves(const binary_tree_t *tree);</code></li>
+<li>Where <code>tree</code> is a pointer to the root node of the tree to count the number of leaves</li>
+<li>If <code>tree</code> is <code>NULL</code>, the function must return 0</li>
+<li>A <code>NULL</code> pointer is not a leaf</li>
+</ul>
+    <h3 class="panel-title">
+      13. Nodes
+    </h3>
+
+<div>
+        <span class="label label-info">
+          mandatory
+        </span>
+    </div>
+  </div>
+
+  <div class="panel-body">
+    <span id="user_id" data-id="2867"></span>
+
+<p>Write a function that counts the nodes with at least 1 child in a binary tree</p>
+
+<ul>
+<li>Prototype: <code>size_t binary_tree_nodes(const binary_tree_t *tree);</code></li>
+<li>Where <code>tree</code> is a pointer to the root node of the tree to count the number of nodes</li>
+<li>If <code>tree</code> is <code>NULL</code>, the function must return 0</li>
+<li>A <code>NULL</code> pointer is not a node</li>
+</ul>
+    <h3 class="panel-title">
+      14. Balance factor
+    </h3>
+
+<div>
+        <span class="label label-info">
+          mandatory
+        </span>
+    </div>
+  </div>
+
+  <div class="panel-body">
+    <span id="user_id" data-id="2867"></span>
+
+
+<p>Write a function that measures the balance factor of a binary tree</p>
+
+<ul>
+<li>Prototype: <code>int binary_tree_balance(const binary_tree_t *tree);</code></li>
+<li>Where <code>tree</code> is a pointer to the root node of the tree to measure the balance factor</li>
+<li>If <code>tree</code> is <code>NULL</code>, return <code>0</code></li>
+</ul>
+    <h3 class="panel-title">
+      15. Is full
+    </h3>
+
+<div>
+        <span class="label label-info">
+          mandatory
+        </span>
+    </div>
+  </div>
+
+  <div class="panel-body">
+    <span id="user_id" data-id="2867"></span>
+
+<p>Write a function that checks if a binary tree is full</p>
+
+<ul>
+<li>Prototype: <code>int binary_tree_is_full(const binary_tree_t *tree);</code></li>
+<li>Where <code>tree</code> is a pointer to the root node of the tree to check</li>
+<li>If <code>tree</code> is <code>NULL</code>, your function must return <code>0</code></li>
+</ul>
+    <h3 class="panel-title">
+      16. Is perfect
+    </h3>
+
+<div>
+        <span class="label label-info">
+          mandatory
+        </span>
+    </div>
+  </div>
+
+  <div class="panel-body">
+    <span id="user_id" data-id="2867"></span>
+
+<p>Write a function that checks if a binary tree is perfect</p>
+
+<ul>
+<li>Prototype: <code>int binary_tree_is_perfect(const binary_tree_t *tree);</code></li>
+<li>Where <code>tree</code> is a pointer to the root node of the tree to check</li>
+<li>If <code>tree</code> is <code>NULL</code>, your function must return <code>0</code></li>
+</ul>
+    <h3 class="panel-title">
+      17. Sibling
+    </h3>
+
+<div>
+        <span class="label label-info">
+          mandatory
+        </span>
+    </div>
+  </div>
+
+  <div class="panel-body">
+    <span id="user_id" data-id="2867"></span>
+
+<p>Write a function that finds the sibling of a node</p>
+
+<ul>
+<li>Prototype: <code>binary_tree_t *binary_tree_sibling(binary_tree_t *node);</code></li>
+<li>Where <code>node</code> is a pointer to the node to find the sibling</li>
+<li>Your function must return a pointer to the sibling node</li>
+<li>If <code>node</code> is <code>NULL</code> or the parent is <code>NULL</code>, return <code>NULL</code></li>
+<li>If <code>node</code> has no sibling, return <code>NULL</code></li>
+</ul>
+    <h3 class="panel-title">
+      18. Uncle
+    </h3>
+
+<div>
+        <span class="label label-info">
+          mandatory
+        </span>
+    </div>
+  </div>
+
+  <div class="panel-body">
+    <span id="user_id" data-id="2867"></span>
+
+<p>Write a function that finds the uncle of a node</p>
+
+<ul>
+<li>Prototype: <code>binary_tree_t *binary_tree_uncle(binary_tree_t *node);</code></li>
+<li>Where <code>node</code> is a pointer to the node to find the uncle</li>
+<li>Your function must return a pointer to the uncle node</li>
+<li>If <code>node</code> is <code>NULL</code>, return <code>NULL</code></li>
+<li>If <code>node</code> has no uncle, return <code>NULL</code></li>
 </ul>
