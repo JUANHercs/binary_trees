@@ -77,3 +77,73 @@
 <li>Don&rsquo;t forget to push your header file</li>
 <li>All your header files should be include guarded</li>
 </ul>
+
+## Tasks
+    <h3 class="panel-title">
+      0. New node
+    </h3>
+
+    <div>
+        <span class="label label-info">
+          mandatory
+        </span>
+    </div>
+  </div>
+
+  <div class="panel-body">
+    <span id="user_id" data-id="2867"></span>
+
+<p>Write a function that creates a binary tree node</p>
+<ul>
+<li>Prototype: <code>binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);</code></li>
+<li>Where <code>parent</code> is a pointer to the parent node of the node to create</li>
+<li>And <code>value</code> is the value to put in the new node</li>
+<li>When created, a node does not have any child</li>
+<li>Your function must return a pointer to the new node, or <code>NULL</code> on failure</li>
+</ul>
+   <h3 class="panel-title">
+      1. Insert left
+    </h3>
+
+<div>
+        <span class="label label-info">
+          mandatory
+        </span>
+    </div>
+  </div>
+
+  <div class="panel-body">
+    <span id="user_id" data-id="2867"></span>
+
+<p>Write a function that inserts a node as the left-child of another node</p>
+
+<ul>
+<li>Prototype: <code>binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value);</code></li>
+<li>Where <code>parent</code> is a pointer to the node to insert the left-child in</li>
+<li>And <code>value</code> is the value to store in the new node</li>
+<li>Your function must return a pointer to the created node, or <code>NULL</code> on failure or if <code>parent</code> is <code>NULL</code></li>
+<li>If <code>parent</code> already has a left-child, the new node must take its place, and the old left-child must be set as the left-child of the new node.</li>
+</ul>
+    <h3 class="panel-title">
+      2. Insert right
+    </h3>
+
+<div>
+        <span class="label label-info">
+          mandatory
+        </span>
+    </div>
+  </div>
+
+  <div class="panel-body">
+    <span id="user_id" data-id="2867"></span>
+
+<p>Write a function that inserts a node as the right-child of another node</p>
+
+<ul>
+<li>Prototype: <code>binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value);</code></li>
+<li>Where <code>parent</code> is a pointer to the node to insert the right-child in</li>
+<li>And <code>value</code> is the value to store in the new node</li>
+<li>Your function must return a pointer to the created node, or <code>NULL</code> on failure or if <code>parent</code> is <code>NULL</code></li>
+<li>If <code>parent</code> already has a right-child, the new node must take its place, and the old right-child must be set as the right-child of the new node.</li>
+</ul>
